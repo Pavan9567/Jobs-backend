@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--c*t&@-v8zfjmjqo@@x%ns0=ln4sm9vx()pky2=$z#l3y-@_^%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'jobboard.urls'
@@ -84,9 +85,10 @@ CORS_ALLOWED_ORIGINS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'job_board',
-        'USER': 'postgres',
-        'PASSWORD': 'Pavan9567',
+        'NAME': 'job_board_ylsq',
+        'USER': 'job_board_ylsq_user',
+        'PASSWORD': '6yz3l3ljmhuvMwwnll8RGBODhNC4PPlm',
+        'HOST': 'dpg-cvanaq2n91rc7397ulm0-a',
         'PORT': '5432',
     }
 }
