@@ -11,7 +11,6 @@ from django.db.models import Q
 def fetch_jobs(request):
     # Path to ChromeDriver
     chrome_driver_path = r"C:\chromedriver\chromedriver-win64\chromedriver.exe"  # Windows
-    # chrome_driver_path = "/usr/local/bin/chromedriver"  # macOS/Linux
 
     # Set up ChromeDriver
     service = Service(chrome_driver_path)
