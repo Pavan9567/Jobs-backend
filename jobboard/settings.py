@@ -75,7 +75,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'jobboard.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
     "https://jobs-frontend-smoky.vercel.app/"
 ]
 
